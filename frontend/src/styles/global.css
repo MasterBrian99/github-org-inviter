@@ -1,0 +1,63 @@
+.circle-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-c-1 {
+  background: #e42f45;
+  clip-path: circle(15% at 50% 55%);
+}
+.circle-c-2 {
+  background: #2fc69a;
+  clip-path: circle(18% at 10% 10%);
+}
+.circle-c-3 {
+  background: #1293ec;
+  clip-path: circle(10% at 90% 10%);
+}
+
+.main {
+  width: 100%;
+  backdrop-filter: blur(158px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  min-height: 100vh;
+  height: 100%;
+}
+
+.hero-image {
+  animation-name: topToBottom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-header-opacity {
+  animation-name: headerOpacity;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}
+
+@keyframes headerOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
