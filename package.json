@@ -4,6 +4,7 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
+    "heroku-prebuild": "cd frontend && yarn install && yarn run build && cd .. && cd && yarn install",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
